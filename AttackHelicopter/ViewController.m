@@ -8,24 +8,31 @@
 
 #import "ViewController.h"
 #import "MyScene.h"
+#import "GameScene.h"
+#import "MenuScene.h"
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (void)viewWillLayoutSubviews
 {
-    [super viewDidLoad];
-
+    [super viewWillLayoutSubviews];
+    
     // Configure the view.
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
-    
+    skView.showsPhysics = YES;
     // Create and configure the scene.
-    SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    if (!skView.scene) {
+        SKScene * scene = [[GameScene alloc] initWithSize:skView.bounds.size];
+        //SKScene * scene = [MyScene sceneWithSize:skView.bounds.size];
+        //SKScene * scene = [MenuScene sceneWithSize:skView.bounds.size];
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+        
+        // Present the scene.
+        [skView presentScene:scene];
+    }
     
-    // Present the scene.
-    [skView presentScene:scene];
 }
 
 - (BOOL)shouldAutorotate
@@ -47,5 +54,10 @@
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
 }
+
+-(BOOL)prefersStatusBarHidden{
+    return YES;
+}
+
 
 @end
