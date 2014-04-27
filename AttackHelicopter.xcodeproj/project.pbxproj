@@ -44,6 +44,14 @@
 		96C2DF5F190DCB3400807B8B /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF5E190DCB3400807B8B /* MenuScene.m */; };
 		96C2DF62190DCB3E00807B8B /* OverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF61190DCB3E00807B8B /* OverScene.m */; };
 		96C2DF65190DCB4600807B8B /* PauseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF64190DCB4600807B8B /* PauseButton.m */; };
+		96C2DF67190DCB7900807B8B /* Propeller.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DF66190DCB7900807B8B /* Propeller.atlas */; };
+		96C2DF6A190DCB9000807B8B /* Rocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF69190DCB9000807B8B /* Rocket.m */; };
+		96C2DF6D190DCB9B00807B8B /* RocketButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF6C190DCB9B00807B8B /* RocketButton.m */; };
+		96C2DF70190DCBA300807B8B /* ShootButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF6F190DCBA300807B8B /* ShootButton.m */; };
+		96C2DF73190DCBB400807B8B /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DF71190DCBB400807B8B /* spark.png */; };
+		96C2DF74190DCBB400807B8B /* SparkA.sks in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DF72190DCBB400807B8B /* SparkA.sks */; };
+		96C2DF76190DCBCF00807B8B /* targetScope.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DF75190DCBCF00807B8B /* targetScope.png */; };
+		96C2DF79190DCBD800807B8B /* TargetScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF78190DCBD800807B8B /* TargetScope.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +128,18 @@
 		96C2DF61190DCB3E00807B8B /* OverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverScene.m; sourceTree = "<group>"; };
 		96C2DF63190DCB4600807B8B /* PauseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseButton.h; sourceTree = "<group>"; };
 		96C2DF64190DCB4600807B8B /* PauseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseButton.m; sourceTree = "<group>"; };
+		96C2DF66190DCB7900807B8B /* Propeller.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Propeller.atlas; sourceTree = "<group>"; };
+		96C2DF68190DCB9000807B8B /* Rocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rocket.h; sourceTree = "<group>"; };
+		96C2DF69190DCB9000807B8B /* Rocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rocket.m; sourceTree = "<group>"; };
+		96C2DF6B190DCB9B00807B8B /* RocketButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RocketButton.h; sourceTree = "<group>"; };
+		96C2DF6C190DCB9B00807B8B /* RocketButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RocketButton.m; sourceTree = "<group>"; };
+		96C2DF6E190DCBA300807B8B /* ShootButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShootButton.h; sourceTree = "<group>"; };
+		96C2DF6F190DCBA300807B8B /* ShootButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShootButton.m; sourceTree = "<group>"; };
+		96C2DF71190DCBB400807B8B /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		96C2DF72190DCBB400807B8B /* SparkA.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SparkA.sks; sourceTree = "<group>"; };
+		96C2DF75190DCBCF00807B8B /* targetScope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = targetScope.png; sourceTree = "<group>"; };
+		96C2DF77190DCBD800807B8B /* TargetScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetScope.h; sourceTree = "<group>"; };
+		96C2DF78190DCBD800807B8B /* TargetScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetScope.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +272,9 @@
 		96C2DF1C190DC61900807B8B /* UI Element */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF75190DCBCF00807B8B /* targetScope.png */,
+				96C2DF77190DCBD800807B8B /* TargetScope.h */,
+				96C2DF78190DCBD800807B8B /* TargetScope.m */,
 				96C2DF5A190DCB2B00807B8B /* MapsController.h */,
 				96C2DF5B190DCB2B00807B8B /* MapsController.m */,
 				96C2DF57190DCB2200807B8B /* Joystick.h */,
@@ -298,6 +321,10 @@
 				96C2DF3A190DCA6000807B8B /* ButtonNode.m */,
 				96C2DF63190DCB4600807B8B /* PauseButton.h */,
 				96C2DF64190DCB4600807B8B /* PauseButton.m */,
+				96C2DF6B190DCB9B00807B8B /* RocketButton.h */,
+				96C2DF6C190DCB9B00807B8B /* RocketButton.m */,
+				96C2DF6E190DCBA300807B8B /* ShootButton.h */,
+				96C2DF6F190DCBA300807B8B /* ShootButton.m */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -316,6 +343,8 @@
 		96C2DF23190DC67700807B8B /* Weapon */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF68190DCB9000807B8B /* Rocket.h */,
+				96C2DF69190DCB9000807B8B /* Rocket.m */,
 				96C2DF4B190DCAF800807B8B /* FlakBullet.h */,
 				96C2DF4C190DCAF800807B8B /* FlakBullet.m */,
 				96C2DF29190DC95C00807B8B /* Weapon.h */,
@@ -346,8 +375,11 @@
 		96C2DF25190DC69000807B8B /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF66190DCB7900807B8B /* Propeller.atlas */,
 				96C2DF3C190DCA7400807B8B /* CategoryBitMaskOpition.h */,
 				96C2DF49190DCAEF00807B8B /* Explosion.sks */,
+				96C2DF71190DCBB400807B8B /* spark.png */,
+				96C2DF72190DCBB400807B8B /* SparkA.sks */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -429,7 +461,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				96C2DEFE190DC3DB00807B8B /* Images.xcassets in Resources */,
+				96C2DF67190DCB7900807B8B /* Propeller.atlas in Resources */,
+				96C2DF76190DCBCF00807B8B /* targetScope.png in Resources */,
 				96C2DEF4190DC3DB00807B8B /* Main_iPad.storyboard in Resources */,
+				96C2DF74190DCBB400807B8B /* SparkA.sks in Resources */,
+				96C2DF73190DCBB400807B8B /* spark.png in Resources */,
 				96C2DF4A190DCAEF00807B8B /* Explosion.sks in Resources */,
 				96C2DEF1190DC3DB00807B8B /* Main_iPhone.storyboard in Resources */,
 				96C2DEE8190DC3DB00807B8B /* InfoPlist.strings in Resources */,
@@ -462,11 +498,14 @@
 				96C2DF3B190DCA6000807B8B /* ButtonNode.m in Sources */,
 				96C2DF31190DC9B500807B8B /* AmmoDisplayer.m in Sources */,
 				96C2DEFA190DC3DB00807B8B /* MyScene.m in Sources */,
+				96C2DF6A190DCB9000807B8B /* Rocket.m in Sources */,
 				96C2DEF7190DC3DB00807B8B /* ViewController.m in Sources */,
+				96C2DF79190DCBD800807B8B /* TargetScope.m in Sources */,
 				96C2DF53190DCB0D00807B8B /* HealthDisplayer.m in Sources */,
 				96C2DF45190DCA9700807B8B /* ENMissileStation.m in Sources */,
 				96C2DF28190DC93300807B8B /* Cannon.m in Sources */,
 				96C2DF34190DC9C000807B8B /* BadMissile.m in Sources */,
+				96C2DF70190DCBA300807B8B /* ShootButton.m in Sources */,
 				96C2DF3F190DCA8400807B8B /* ENAntiAirCannon.m in Sources */,
 				96C2DF2B190DC95C00807B8B /* Weapon.m in Sources */,
 				96C2DF48190DCA9E00807B8B /* ENSprite.m in Sources */,
@@ -474,6 +513,7 @@
 				96C2DEEE190DC3DB00807B8B /* AppDelegate.m in Sources */,
 				96C2DF50190DCB0000807B8B /* GameScene.m in Sources */,
 				96C2DEEA190DC3DB00807B8B /* main.m in Sources */,
+				96C2DF6D190DCB9B00807B8B /* RocketButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
