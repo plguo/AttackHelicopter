@@ -52,6 +52,8 @@
 		96C2DF74190DCBB400807B8B /* SparkA.sks in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DF72190DCBB400807B8B /* SparkA.sks */; };
 		96C2DF76190DCBCF00807B8B /* targetScope.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DF75190DCBCF00807B8B /* targetScope.png */; };
 		96C2DF79190DCBD800807B8B /* TargetScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF78190DCBD800807B8B /* TargetScope.m */; };
+		96C2DF7C190DCC0300807B8B /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF7B190DCC0300807B8B /* Tile.m */; };
+		96C2DF7F190DCC0A00807B8B /* TileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF7E190DCC0A00807B8B /* TileMap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +142,10 @@
 		96C2DF75190DCBCF00807B8B /* targetScope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = targetScope.png; sourceTree = "<group>"; };
 		96C2DF77190DCBD800807B8B /* TargetScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetScope.h; sourceTree = "<group>"; };
 		96C2DF78190DCBD800807B8B /* TargetScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetScope.m; sourceTree = "<group>"; };
+		96C2DF7A190DCC0300807B8B /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		96C2DF7B190DCC0300807B8B /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		96C2DF7D190DCC0A00807B8B /* TileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileMap.h; sourceTree = "<group>"; };
+		96C2DF7E190DCC0A00807B8B /* TileMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileMap.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +305,10 @@
 		96C2DF1E190DC63800807B8B /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF7A190DCC0300807B8B /* Tile.h */,
+				96C2DF7B190DCC0300807B8B /* Tile.m */,
+				96C2DF7D190DCC0A00807B8B /* TileMap.h */,
+				96C2DF7E190DCC0A00807B8B /* TileMap.m */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -506,6 +516,8 @@
 				96C2DF28190DC93300807B8B /* Cannon.m in Sources */,
 				96C2DF34190DC9C000807B8B /* BadMissile.m in Sources */,
 				96C2DF70190DCBA300807B8B /* ShootButton.m in Sources */,
+				96C2DF7F190DCC0A00807B8B /* TileMap.m in Sources */,
+				96C2DF7C190DCC0300807B8B /* Tile.m in Sources */,
 				96C2DF3F190DCA8400807B8B /* ENAntiAirCannon.m in Sources */,
 				96C2DF2B190DC95C00807B8B /* Weapon.m in Sources */,
 				96C2DF48190DCA9E00807B8B /* ENSprite.m in Sources */,
