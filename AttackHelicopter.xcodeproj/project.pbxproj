@@ -121,10 +121,11 @@
 		96C2DEE3190DC3DB00807B8B /* AttackHelicopter */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF1B190DC60B00807B8B /* Scene */,
 				96C2DF1A190DC5BE00807B8B /* Controller */,
-				96C2DEF8190DC3DB00807B8B /* MyScene.h */,
-				96C2DEF9190DC3DB00807B8B /* MyScene.m */,
-				96C2DEFD190DC3DB00807B8B /* Images.xcassets */,
+				96C2DF1E190DC63800807B8B /* Map */,
+				96C2DF1C190DC61900807B8B /* UI Element */,
+				96C2DF1D190DC62900807B8B /* Game Element */,
 				96C2DEE4190DC3DB00807B8B /* Supporting Files */,
 			);
 			path = AttackHelicopter;
@@ -133,6 +134,7 @@
 		96C2DEE4190DC3DB00807B8B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DEFD190DC3DB00807B8B /* Images.xcassets */,
 				96C2DEE5190DC3DB00807B8B /* AttackHelicopter-Info.plist */,
 				96C2DEE6190DC3DB00807B8B /* InfoPlist.strings */,
 				96C2DEE9190DC3DB00807B8B /* main.m */,
@@ -170,6 +172,84 @@
 				96C2DEF6190DC3DB00807B8B /* ViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		96C2DF1B190DC60B00807B8B /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				96C2DEF8190DC3DB00807B8B /* MyScene.h */,
+				96C2DEF9190DC3DB00807B8B /* MyScene.m */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		96C2DF1C190DC61900807B8B /* UI Element */ = {
+			isa = PBXGroup;
+			children = (
+				96C2DF20190DC65300807B8B /* Button */,
+				96C2DF1F190DC64500807B8B /* Displayer */,
+			);
+			name = "UI Element";
+			sourceTree = "<group>";
+		};
+		96C2DF1D190DC62900807B8B /* Game Element */ = {
+			isa = PBXGroup;
+			children = (
+				96C2DF21190DC66A00807B8B /* Helicopter */,
+				96C2DF23190DC67700807B8B /* Weapon */,
+				96C2DF24190DC68100807B8B /* Enemy */,
+				96C2DF25190DC69000807B8B /* Support */,
+			);
+			name = "Game Element";
+			sourceTree = "<group>";
+		};
+		96C2DF1E190DC63800807B8B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		96C2DF1F190DC64500807B8B /* Displayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Displayer;
+			sourceTree = "<group>";
+		};
+		96C2DF20190DC65300807B8B /* Button */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		96C2DF21190DC66A00807B8B /* Helicopter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helicopter;
+			sourceTree = "<group>";
+		};
+		96C2DF23190DC67700807B8B /* Weapon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Weapon;
+			sourceTree = "<group>";
+		};
+		96C2DF24190DC68100807B8B /* Enemy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Enemy;
+			sourceTree = "<group>";
+		};
+		96C2DF25190DC69000807B8B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
