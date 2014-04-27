@@ -26,6 +26,9 @@
 		96C2DF11190DC3DB00807B8B /* AttackHelicopterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF10190DC3DB00807B8B /* AttackHelicopterTests.m */; };
 		96C2DF28190DC93300807B8B /* Cannon.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF27190DC93300807B8B /* Cannon.m */; };
 		96C2DF2B190DC95C00807B8B /* Weapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF2A190DC95C00807B8B /* Weapon.m */; };
+		96C2DF2E190DC99200807B8B /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF2D190DC99200807B8B /* Bullet.m */; };
+		96C2DF31190DC9B500807B8B /* AmmoDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF30190DC9B500807B8B /* AmmoDisplayer.m */; };
+		96C2DF34190DC9C000807B8B /* BadMissile.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF33190DC9C000807B8B /* BadMissile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,12 @@
 		96C2DF27190DC93300807B8B /* Cannon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cannon.m; sourceTree = "<group>"; };
 		96C2DF29190DC95C00807B8B /* Weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weapon.h; sourceTree = "<group>"; };
 		96C2DF2A190DC95C00807B8B /* Weapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weapon.m; sourceTree = "<group>"; };
+		96C2DF2C190DC99200807B8B /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
+		96C2DF2D190DC99200807B8B /* Bullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bullet.m; sourceTree = "<group>"; };
+		96C2DF2F190DC9B500807B8B /* AmmoDisplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmmoDisplayer.h; sourceTree = "<group>"; };
+		96C2DF30190DC9B500807B8B /* AmmoDisplayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmmoDisplayer.m; sourceTree = "<group>"; };
+		96C2DF32190DC9C000807B8B /* BadMissile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadMissile.h; sourceTree = "<group>"; };
+		96C2DF33190DC9C000807B8B /* BadMissile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadMissile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +228,8 @@
 		96C2DF1F190DC64500807B8B /* Displayer */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF2F190DC9B500807B8B /* AmmoDisplayer.h */,
+				96C2DF30190DC9B500807B8B /* AmmoDisplayer.m */,
 			);
 			name = Displayer;
 			sourceTree = "<group>";
@@ -244,6 +255,10 @@
 			children = (
 				96C2DF29190DC95C00807B8B /* Weapon.h */,
 				96C2DF2A190DC95C00807B8B /* Weapon.m */,
+				96C2DF2C190DC99200807B8B /* Bullet.h */,
+				96C2DF2D190DC99200807B8B /* Bullet.m */,
+				96C2DF32190DC9C000807B8B /* BadMissile.h */,
+				96C2DF33190DC9C000807B8B /* BadMissile.m */,
 			);
 			name = Weapon;
 			sourceTree = "<group>";
@@ -360,9 +375,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C2DF2E190DC99200807B8B /* Bullet.m in Sources */,
+				96C2DF31190DC9B500807B8B /* AmmoDisplayer.m in Sources */,
 				96C2DEFA190DC3DB00807B8B /* MyScene.m in Sources */,
 				96C2DEF7190DC3DB00807B8B /* ViewController.m in Sources */,
 				96C2DF28190DC93300807B8B /* Cannon.m in Sources */,
+				96C2DF34190DC9C000807B8B /* BadMissile.m in Sources */,
 				96C2DF2B190DC95C00807B8B /* Weapon.m in Sources */,
 				96C2DEEE190DC3DB00807B8B /* AppDelegate.m in Sources */,
 				96C2DEEA190DC3DB00807B8B /* main.m in Sources */,
