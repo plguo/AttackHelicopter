@@ -24,6 +24,8 @@
 		96C2DF07190DC3DB00807B8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DEDF190DC3DB00807B8B /* UIKit.framework */; };
 		96C2DF0F190DC3DB00807B8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DF0D190DC3DB00807B8B /* InfoPlist.strings */; };
 		96C2DF11190DC3DB00807B8B /* AttackHelicopterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF10190DC3DB00807B8B /* AttackHelicopterTests.m */; };
+		96C2DF28190DC93300807B8B /* Cannon.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF27190DC93300807B8B /* Cannon.m */; };
+		96C2DF2B190DC95C00807B8B /* Weapon.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF2A190DC95C00807B8B /* Weapon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		96C2DF0C190DC3DB00807B8B /* AttackHelicopterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AttackHelicopterTests-Info.plist"; sourceTree = "<group>"; };
 		96C2DF0E190DC3DB00807B8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96C2DF10190DC3DB00807B8B /* AttackHelicopterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttackHelicopterTests.m; sourceTree = "<group>"; };
+		96C2DF26190DC93300807B8B /* Cannon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cannon.h; sourceTree = "<group>"; };
+		96C2DF27190DC93300807B8B /* Cannon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cannon.m; sourceTree = "<group>"; };
+		96C2DF29190DC95C00807B8B /* Weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weapon.h; sourceTree = "<group>"; };
+		96C2DF2A190DC95C00807B8B /* Weapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weapon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +233,8 @@
 		96C2DF21190DC66A00807B8B /* Helicopter */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF26190DC93300807B8B /* Cannon.h */,
+				96C2DF27190DC93300807B8B /* Cannon.m */,
 			);
 			name = Helicopter;
 			sourceTree = "<group>";
@@ -234,6 +242,8 @@
 		96C2DF23190DC67700807B8B /* Weapon */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF29190DC95C00807B8B /* Weapon.h */,
+				96C2DF2A190DC95C00807B8B /* Weapon.m */,
 			);
 			name = Weapon;
 			sourceTree = "<group>";
@@ -352,6 +362,8 @@
 			files = (
 				96C2DEFA190DC3DB00807B8B /* MyScene.m in Sources */,
 				96C2DEF7190DC3DB00807B8B /* ViewController.m in Sources */,
+				96C2DF28190DC93300807B8B /* Cannon.m in Sources */,
+				96C2DF2B190DC95C00807B8B /* Weapon.m in Sources */,
 				96C2DEEE190DC3DB00807B8B /* AppDelegate.m in Sources */,
 				96C2DEEA190DC3DB00807B8B /* main.m in Sources */,
 			);
