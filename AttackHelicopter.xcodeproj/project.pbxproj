@@ -55,6 +55,8 @@
 		96C2DF7C190DCC0300807B8B /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF7B190DCC0300807B8B /* Tile.m */; };
 		96C2DF7F190DCC0A00807B8B /* TileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF7E190DCC0A00807B8B /* TileMap.m */; };
 		96C2DF81190DCC6900807B8B /* GameResource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DF80190DCC6900807B8B /* GameResource.xcassets */; };
+		96C2DF83190DCCF700807B8B /* TileImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DF82190DCCF700807B8B /* TileImage.xcassets */; };
+		96C2DF85190DCD5C00807B8B /* UIResource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DF84190DCD5C00807B8B /* UIResource.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +150,8 @@
 		96C2DF7D190DCC0A00807B8B /* TileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileMap.h; sourceTree = "<group>"; };
 		96C2DF7E190DCC0A00807B8B /* TileMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileMap.m; sourceTree = "<group>"; };
 		96C2DF80190DCC6900807B8B /* GameResource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GameResource.xcassets; sourceTree = "<group>"; };
+		96C2DF82190DCCF700807B8B /* TileImage.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TileImage.xcassets; sourceTree = "<group>"; };
+		96C2DF84190DCD5C00807B8B /* UIResource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UIResource.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +293,7 @@
 				96C2DF58190DCB2200807B8B /* Joystick.m */,
 				96C2DF20190DC65300807B8B /* Button */,
 				96C2DF1F190DC64500807B8B /* Displayer */,
+				96C2DF84190DCD5C00807B8B /* UIResource.xcassets */,
 			);
 			name = "UI Element";
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 				96C2DF7B190DCC0300807B8B /* Tile.m */,
 				96C2DF7D190DCC0A00807B8B /* TileMap.h */,
 				96C2DF7E190DCC0A00807B8B /* TileMap.m */,
+				96C2DF82190DCCF700807B8B /* TileImage.xcassets */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -474,11 +480,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				96C2DEFE190DC3DB00807B8B /* Images.xcassets in Resources */,
+				96C2DF85190DCD5C00807B8B /* UIResource.xcassets in Resources */,
 				96C2DF67190DCB7900807B8B /* Propeller.atlas in Resources */,
 				96C2DF76190DCBCF00807B8B /* targetScope.png in Resources */,
 				96C2DF81190DCC6900807B8B /* GameResource.xcassets in Resources */,
 				96C2DEF4190DC3DB00807B8B /* Main_iPad.storyboard in Resources */,
 				96C2DF74190DCBB400807B8B /* SparkA.sks in Resources */,
+				96C2DF83190DCCF700807B8B /* TileImage.xcassets in Resources */,
 				96C2DF73190DCBB400807B8B /* spark.png in Resources */,
 				96C2DF4A190DCAEF00807B8B /* Explosion.sks in Resources */,
 				96C2DEF1190DC3DB00807B8B /* Main_iPhone.storyboard in Resources */,
