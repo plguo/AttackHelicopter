@@ -34,6 +34,16 @@
 		96C2DF42190DCA8D00807B8B /* ENFlakGun.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF41190DCA8D00807B8B /* ENFlakGun.m */; };
 		96C2DF45190DCA9700807B8B /* ENMissileStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF44190DCA9700807B8B /* ENMissileStation.m */; };
 		96C2DF48190DCA9E00807B8B /* ENSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF47190DCA9E00807B8B /* ENSprite.m */; };
+		96C2DF4A190DCAEF00807B8B /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DF49190DCAEF00807B8B /* Explosion.sks */; };
+		96C2DF4D190DCAF800807B8B /* FlakBullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF4C190DCAF800807B8B /* FlakBullet.m */; };
+		96C2DF50190DCB0000807B8B /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF4F190DCB0000807B8B /* GameScene.m */; };
+		96C2DF53190DCB0D00807B8B /* HealthDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF52190DCB0D00807B8B /* HealthDisplayer.m */; };
+		96C2DF56190DCB1400807B8B /* Helicopter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF55190DCB1400807B8B /* Helicopter.m */; };
+		96C2DF59190DCB2200807B8B /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF58190DCB2200807B8B /* Joystick.m */; };
+		96C2DF5C190DCB2B00807B8B /* MapsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF5B190DCB2B00807B8B /* MapsController.m */; };
+		96C2DF5F190DCB3400807B8B /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF5E190DCB3400807B8B /* MenuScene.m */; };
+		96C2DF62190DCB3E00807B8B /* OverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF61190DCB3E00807B8B /* OverScene.m */; };
+		96C2DF65190DCB4600807B8B /* PauseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF64190DCB4600807B8B /* PauseButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +101,25 @@
 		96C2DF44190DCA9700807B8B /* ENMissileStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENMissileStation.m; sourceTree = "<group>"; };
 		96C2DF46190DCA9E00807B8B /* ENSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENSprite.h; sourceTree = "<group>"; };
 		96C2DF47190DCA9E00807B8B /* ENSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENSprite.m; sourceTree = "<group>"; };
+		96C2DF49190DCAEF00807B8B /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		96C2DF4B190DCAF800807B8B /* FlakBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlakBullet.h; sourceTree = "<group>"; };
+		96C2DF4C190DCAF800807B8B /* FlakBullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlakBullet.m; sourceTree = "<group>"; };
+		96C2DF4E190DCB0000807B8B /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		96C2DF4F190DCB0000807B8B /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		96C2DF51190DCB0D00807B8B /* HealthDisplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthDisplayer.h; sourceTree = "<group>"; };
+		96C2DF52190DCB0D00807B8B /* HealthDisplayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthDisplayer.m; sourceTree = "<group>"; };
+		96C2DF54190DCB1400807B8B /* Helicopter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helicopter.h; sourceTree = "<group>"; };
+		96C2DF55190DCB1400807B8B /* Helicopter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helicopter.m; sourceTree = "<group>"; };
+		96C2DF57190DCB2200807B8B /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
+		96C2DF58190DCB2200807B8B /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
+		96C2DF5A190DCB2B00807B8B /* MapsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapsController.h; sourceTree = "<group>"; };
+		96C2DF5B190DCB2B00807B8B /* MapsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapsController.m; sourceTree = "<group>"; };
+		96C2DF5D190DCB3400807B8B /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
+		96C2DF5E190DCB3400807B8B /* MenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
+		96C2DF60190DCB3E00807B8B /* OverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverScene.h; sourceTree = "<group>"; };
+		96C2DF61190DCB3E00807B8B /* OverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverScene.m; sourceTree = "<group>"; };
+		96C2DF63190DCB4600807B8B /* PauseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseButton.h; sourceTree = "<group>"; };
+		96C2DF64190DCB4600807B8B /* PauseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +237,12 @@
 		96C2DF1B190DC60B00807B8B /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF60190DCB3E00807B8B /* OverScene.h */,
+				96C2DF61190DCB3E00807B8B /* OverScene.m */,
+				96C2DF4E190DCB0000807B8B /* GameScene.h */,
+				96C2DF4F190DCB0000807B8B /* GameScene.m */,
+				96C2DF5D190DCB3400807B8B /* MenuScene.h */,
+				96C2DF5E190DCB3400807B8B /* MenuScene.m */,
 				96C2DEF8190DC3DB00807B8B /* MyScene.h */,
 				96C2DEF9190DC3DB00807B8B /* MyScene.m */,
 			);
@@ -217,6 +252,10 @@
 		96C2DF1C190DC61900807B8B /* UI Element */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF5A190DCB2B00807B8B /* MapsController.h */,
+				96C2DF5B190DCB2B00807B8B /* MapsController.m */,
+				96C2DF57190DCB2200807B8B /* Joystick.h */,
+				96C2DF58190DCB2200807B8B /* Joystick.m */,
 				96C2DF20190DC65300807B8B /* Button */,
 				96C2DF1F190DC64500807B8B /* Displayer */,
 			);
@@ -244,6 +283,8 @@
 		96C2DF1F190DC64500807B8B /* Displayer */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF51190DCB0D00807B8B /* HealthDisplayer.h */,
+				96C2DF52190DCB0D00807B8B /* HealthDisplayer.m */,
 				96C2DF2F190DC9B500807B8B /* AmmoDisplayer.h */,
 				96C2DF30190DC9B500807B8B /* AmmoDisplayer.m */,
 			);
@@ -255,6 +296,8 @@
 			children = (
 				96C2DF39190DCA6000807B8B /* ButtonNode.h */,
 				96C2DF3A190DCA6000807B8B /* ButtonNode.m */,
+				96C2DF63190DCB4600807B8B /* PauseButton.h */,
+				96C2DF64190DCB4600807B8B /* PauseButton.m */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -262,6 +305,8 @@
 		96C2DF21190DC66A00807B8B /* Helicopter */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF54190DCB1400807B8B /* Helicopter.h */,
+				96C2DF55190DCB1400807B8B /* Helicopter.m */,
 				96C2DF26190DC93300807B8B /* Cannon.h */,
 				96C2DF27190DC93300807B8B /* Cannon.m */,
 			);
@@ -271,6 +316,8 @@
 		96C2DF23190DC67700807B8B /* Weapon */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF4B190DCAF800807B8B /* FlakBullet.h */,
+				96C2DF4C190DCAF800807B8B /* FlakBullet.m */,
 				96C2DF29190DC95C00807B8B /* Weapon.h */,
 				96C2DF2A190DC95C00807B8B /* Weapon.m */,
 				96C2DF2C190DC99200807B8B /* Bullet.h */,
@@ -300,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				96C2DF3C190DCA7400807B8B /* CategoryBitMaskOpition.h */,
+				96C2DF49190DCAEF00807B8B /* Explosion.sks */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -382,6 +430,7 @@
 			files = (
 				96C2DEFE190DC3DB00807B8B /* Images.xcassets in Resources */,
 				96C2DEF4190DC3DB00807B8B /* Main_iPad.storyboard in Resources */,
+				96C2DF4A190DCAEF00807B8B /* Explosion.sks in Resources */,
 				96C2DEF1190DC3DB00807B8B /* Main_iPhone.storyboard in Resources */,
 				96C2DEE8190DC3DB00807B8B /* InfoPlist.strings in Resources */,
 			);
@@ -402,19 +451,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96C2DF5C190DCB2B00807B8B /* MapsController.m in Sources */,
+				96C2DF59190DCB2200807B8B /* Joystick.m in Sources */,
+				96C2DF56190DCB1400807B8B /* Helicopter.m in Sources */,
+				96C2DF5F190DCB3400807B8B /* MenuScene.m in Sources */,
 				96C2DF2E190DC99200807B8B /* Bullet.m in Sources */,
 				96C2DF42190DCA8D00807B8B /* ENFlakGun.m in Sources */,
+				96C2DF65190DCB4600807B8B /* PauseButton.m in Sources */,
+				96C2DF4D190DCAF800807B8B /* FlakBullet.m in Sources */,
 				96C2DF3B190DCA6000807B8B /* ButtonNode.m in Sources */,
 				96C2DF31190DC9B500807B8B /* AmmoDisplayer.m in Sources */,
 				96C2DEFA190DC3DB00807B8B /* MyScene.m in Sources */,
 				96C2DEF7190DC3DB00807B8B /* ViewController.m in Sources */,
+				96C2DF53190DCB0D00807B8B /* HealthDisplayer.m in Sources */,
 				96C2DF45190DCA9700807B8B /* ENMissileStation.m in Sources */,
 				96C2DF28190DC93300807B8B /* Cannon.m in Sources */,
 				96C2DF34190DC9C000807B8B /* BadMissile.m in Sources */,
 				96C2DF3F190DCA8400807B8B /* ENAntiAirCannon.m in Sources */,
 				96C2DF2B190DC95C00807B8B /* Weapon.m in Sources */,
 				96C2DF48190DCA9E00807B8B /* ENSprite.m in Sources */,
+				96C2DF62190DCB3E00807B8B /* OverScene.m in Sources */,
 				96C2DEEE190DC3DB00807B8B /* AppDelegate.m in Sources */,
+				96C2DF50190DCB0000807B8B /* GameScene.m in Sources */,
 				96C2DEEA190DC3DB00807B8B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
