@@ -121,12 +121,7 @@
 		96C2DEE3190DC3DB00807B8B /* AttackHelicopter */ = {
 			isa = PBXGroup;
 			children = (
-				96C2DEEC190DC3DB00807B8B /* AppDelegate.h */,
-				96C2DEED190DC3DB00807B8B /* AppDelegate.m */,
-				96C2DEEF190DC3DB00807B8B /* Main_iPhone.storyboard */,
-				96C2DEF2190DC3DB00807B8B /* Main_iPad.storyboard */,
-				96C2DEF5190DC3DB00807B8B /* ViewController.h */,
-				96C2DEF6190DC3DB00807B8B /* ViewController.m */,
+				96C2DF1A190DC5BE00807B8B /* Controller */,
 				96C2DEF8190DC3DB00807B8B /* MyScene.h */,
 				96C2DEF9190DC3DB00807B8B /* MyScene.m */,
 				96C2DEFD190DC3DB00807B8B /* Images.xcassets */,
@@ -162,6 +157,19 @@
 				96C2DF0D190DC3DB00807B8B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96C2DF1A190DC5BE00807B8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96C2DEEC190DC3DB00807B8B /* AppDelegate.h */,
+				96C2DEED190DC3DB00807B8B /* AppDelegate.m */,
+				96C2DEEF190DC3DB00807B8B /* Main_iPhone.storyboard */,
+				96C2DEF2190DC3DB00807B8B /* Main_iPad.storyboard */,
+				96C2DEF5190DC3DB00807B8B /* ViewController.h */,
+				96C2DEF6190DC3DB00807B8B /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
