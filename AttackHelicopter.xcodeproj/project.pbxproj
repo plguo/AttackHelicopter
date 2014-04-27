@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96C2DEDC190DC3DB00807B8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DEDB190DC3DB00807B8B /* Foundation.framework */; };
+		96C2DEDE190DC3DB00807B8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DEDD190DC3DB00807B8B /* CoreGraphics.framework */; };
+		96C2DEE0190DC3DB00807B8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DEDF190DC3DB00807B8B /* UIKit.framework */; };
+		96C2DEE2190DC3DB00807B8B /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DEE1190DC3DB00807B8B /* SpriteKit.framework */; };
+		96C2DEE8190DC3DB00807B8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DEE6190DC3DB00807B8B /* InfoPlist.strings */; };
+		96C2DEEA190DC3DB00807B8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DEE9190DC3DB00807B8B /* main.m */; };
+		96C2DEEE190DC3DB00807B8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DEED190DC3DB00807B8B /* AppDelegate.m */; };
+		96C2DEF1190DC3DB00807B8B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DEEF190DC3DB00807B8B /* Main_iPhone.storyboard */; };
+		96C2DEF4190DC3DB00807B8B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DEF2190DC3DB00807B8B /* Main_iPad.storyboard */; };
+		96C2DEF7190DC3DB00807B8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DEF6190DC3DB00807B8B /* ViewController.m */; };
+		96C2DEFA190DC3DB00807B8B /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DEF9190DC3DB00807B8B /* MyScene.m */; };
+		96C2DEFC190DC3DB00807B8B /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DEFB190DC3DB00807B8B /* Spaceship.png */; };
+		96C2DEFE190DC3DB00807B8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DEFD190DC3DB00807B8B /* Images.xcassets */; };
+		96C2DF05190DC3DB00807B8B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DF04190DC3DB00807B8B /* XCTest.framework */; };
+		96C2DF06190DC3DB00807B8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DEDB190DC3DB00807B8B /* Foundation.framework */; };
+		96C2DF07190DC3DB00807B8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DEDF190DC3DB00807B8B /* UIKit.framework */; };
+		96C2DF0F190DC3DB00807B8B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96C2DF0D190DC3DB00807B8B /* InfoPlist.strings */; };
+		96C2DF11190DC3DB00807B8B /* AttackHelicopterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF10190DC3DB00807B8B /* AttackHelicopterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96C2DF08190DC3DB00807B8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96C2DED0190DC3DB00807B8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96C2DED7190DC3DB00807B8B;
+			remoteInfo = AttackHelicopter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96C2DED8190DC3DB00807B8B /* AttackHelicopter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttackHelicopter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C2DEDB190DC3DB00807B8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96C2DEDD190DC3DB00807B8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		96C2DEDF190DC3DB00807B8B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		96C2DEE1190DC3DB00807B8B /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		96C2DEE5190DC3DB00807B8B /* AttackHelicopter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AttackHelicopter-Info.plist"; sourceTree = "<group>"; };
+		96C2DEE7190DC3DB00807B8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96C2DEE9190DC3DB00807B8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96C2DEEB190DC3DB00807B8B /* AttackHelicopter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AttackHelicopter-Prefix.pch"; sourceTree = "<group>"; };
+		96C2DEEC190DC3DB00807B8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		96C2DEED190DC3DB00807B8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		96C2DEF0190DC3DB00807B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		96C2DEF3190DC3DB00807B8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		96C2DEF5190DC3DB00807B8B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		96C2DEF6190DC3DB00807B8B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		96C2DEF8190DC3DB00807B8B /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		96C2DEF9190DC3DB00807B8B /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		96C2DEFB190DC3DB00807B8B /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		96C2DEFD190DC3DB00807B8B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		96C2DF03190DC3DB00807B8B /* AttackHelicopterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttackHelicopterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C2DF04190DC3DB00807B8B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		96C2DF0C190DC3DB00807B8B /* AttackHelicopterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AttackHelicopterTests-Info.plist"; sourceTree = "<group>"; };
+		96C2DF0E190DC3DB00807B8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96C2DF10190DC3DB00807B8B /* AttackHelicopterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttackHelicopterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96C2DED5190DC3DB00807B8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C2DEDE190DC3DB00807B8B /* CoreGraphics.framework in Frameworks */,
+				96C2DEE0190DC3DB00807B8B /* UIKit.framework in Frameworks */,
+				96C2DEE2190DC3DB00807B8B /* SpriteKit.framework in Frameworks */,
+				96C2DEDC190DC3DB00807B8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96C2DF00190DC3DB00807B8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C2DF05190DC3DB00807B8B /* XCTest.framework in Frameworks */,
+				96C2DF07190DC3DB00807B8B /* UIKit.framework in Frameworks */,
+				96C2DF06190DC3DB00807B8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96C2DECF190DC3DB00807B8B = {
+			isa = PBXGroup;
+			children = (
+				96C2DEE3190DC3DB00807B8B /* AttackHelicopter */,
+				96C2DF0A190DC3DB00807B8B /* AttackHelicopterTests */,
+				96C2DEDA190DC3DB00807B8B /* Frameworks */,
+				96C2DED9190DC3DB00807B8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96C2DED9190DC3DB00807B8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96C2DED8190DC3DB00807B8B /* AttackHelicopter.app */,
+				96C2DF03190DC3DB00807B8B /* AttackHelicopterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96C2DEDA190DC3DB00807B8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96C2DEDB190DC3DB00807B8B /* Foundation.framework */,
+				96C2DEDD190DC3DB00807B8B /* CoreGraphics.framework */,
+				96C2DEDF190DC3DB00807B8B /* UIKit.framework */,
+				96C2DEE1190DC3DB00807B8B /* SpriteKit.framework */,
+				96C2DF04190DC3DB00807B8B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96C2DEE3190DC3DB00807B8B /* AttackHelicopter */ = {
+			isa = PBXGroup;
+			children = (
+				96C2DEEC190DC3DB00807B8B /* AppDelegate.h */,
+				96C2DEED190DC3DB00807B8B /* AppDelegate.m */,
+				96C2DEEF190DC3DB00807B8B /* Main_iPhone.storyboard */,
+				96C2DEF2190DC3DB00807B8B /* Main_iPad.storyboard */,
+				96C2DEF5190DC3DB00807B8B /* ViewController.h */,
+				96C2DEF6190DC3DB00807B8B /* ViewController.m */,
+				96C2DEF8190DC3DB00807B8B /* MyScene.h */,
+				96C2DEF9190DC3DB00807B8B /* MyScene.m */,
+				96C2DEFB190DC3DB00807B8B /* Spaceship.png */,
+				96C2DEFD190DC3DB00807B8B /* Images.xcassets */,
+				96C2DEE4190DC3DB00807B8B /* Supporting Files */,
+			);
+			path = AttackHelicopter;
+			sourceTree = "<group>";
+		};
+		96C2DEE4190DC3DB00807B8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96C2DEE5190DC3DB00807B8B /* AttackHelicopter-Info.plist */,
+				96C2DEE6190DC3DB00807B8B /* InfoPlist.strings */,
+				96C2DEE9190DC3DB00807B8B /* main.m */,
+				96C2DEEB190DC3DB00807B8B /* AttackHelicopter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96C2DF0A190DC3DB00807B8B /* AttackHelicopterTests */ = {
+			isa = PBXGroup;
+			children = (
+				96C2DF10190DC3DB00807B8B /* AttackHelicopterTests.m */,
+				96C2DF0B190DC3DB00807B8B /* Supporting Files */,
+			);
+			path = AttackHelicopterTests;
+			sourceTree = "<group>";
+		};
+		96C2DF0B190DC3DB00807B8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96C2DF0C190DC3DB00807B8B /* AttackHelicopterTests-Info.plist */,
+				96C2DF0D190DC3DB00807B8B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96C2DED7190DC3DB00807B8B /* AttackHelicopter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96C2DF14190DC3DB00807B8B /* Build configuration list for PBXNativeTarget "AttackHelicopter" */;
+			buildPhases = (
+				96C2DED4190DC3DB00807B8B /* Sources */,
+				96C2DED5190DC3DB00807B8B /* Frameworks */,
+				96C2DED6190DC3DB00807B8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AttackHelicopter;
+			productName = AttackHelicopter;
+			productReference = 96C2DED8190DC3DB00807B8B /* AttackHelicopter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96C2DF02190DC3DB00807B8B /* AttackHelicopterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96C2DF17190DC3DB00807B8B /* Build configuration list for PBXNativeTarget "AttackHelicopterTests" */;
+			buildPhases = (
+				96C2DEFF190DC3DB00807B8B /* Sources */,
+				96C2DF00190DC3DB00807B8B /* Frameworks */,
+				96C2DF01190DC3DB00807B8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96C2DF09190DC3DB00807B8B /* PBXTargetDependency */,
+			);
+			name = AttackHelicopterTests;
+			productName = AttackHelicopterTests;
+			productReference = 96C2DF03190DC3DB00807B8B /* AttackHelicopterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96C2DED0190DC3DB00807B8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Edward Peiliang Guo";
+				TargetAttributes = {
+					96C2DF02190DC3DB00807B8B = {
+						TestTargetID = 96C2DED7190DC3DB00807B8B;
+					};
+				};
+			};
+			buildConfigurationList = 96C2DED3190DC3DB00807B8B /* Build configuration list for PBXProject "AttackHelicopter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96C2DECF190DC3DB00807B8B;
+			productRefGroup = 96C2DED9190DC3DB00807B8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96C2DED7190DC3DB00807B8B /* AttackHelicopter */,
+				96C2DF02190DC3DB00807B8B /* AttackHelicopterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96C2DED6190DC3DB00807B8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C2DEFC190DC3DB00807B8B /* Spaceship.png in Resources */,
+				96C2DEFE190DC3DB00807B8B /* Images.xcassets in Resources */,
+				96C2DEF4190DC3DB00807B8B /* Main_iPad.storyboard in Resources */,
+				96C2DEF1190DC3DB00807B8B /* Main_iPhone.storyboard in Resources */,
+				96C2DEE8190DC3DB00807B8B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96C2DF01190DC3DB00807B8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C2DF0F190DC3DB00807B8B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96C2DED4190DC3DB00807B8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C2DEFA190DC3DB00807B8B /* MyScene.m in Sources */,
+				96C2DEF7190DC3DB00807B8B /* ViewController.m in Sources */,
+				96C2DEEE190DC3DB00807B8B /* AppDelegate.m in Sources */,
+				96C2DEEA190DC3DB00807B8B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96C2DEFF190DC3DB00807B8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C2DF11190DC3DB00807B8B /* AttackHelicopterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96C2DF09190DC3DB00807B8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96C2DED7190DC3DB00807B8B /* AttackHelicopter */;
+			targetProxy = 96C2DF08190DC3DB00807B8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96C2DEE6190DC3DB00807B8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96C2DEE7190DC3DB00807B8B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		96C2DEEF190DC3DB00807B8B /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96C2DEF0190DC3DB00807B8B /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		96C2DEF2190DC3DB00807B8B /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96C2DEF3190DC3DB00807B8B /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		96C2DF0D190DC3DB00807B8B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96C2DF0E190DC3DB00807B8B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96C2DF12190DC3DB00807B8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96C2DF13190DC3DB00807B8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96C2DF15190DC3DB00807B8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AttackHelicopter/AttackHelicopter-Prefix.pch";
+				INFOPLIST_FILE = "AttackHelicopter/AttackHelicopter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		96C2DF16190DC3DB00807B8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AttackHelicopter/AttackHelicopter-Prefix.pch";
+				INFOPLIST_FILE = "AttackHelicopter/AttackHelicopter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		96C2DF18190DC3DB00807B8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AttackHelicopter.app/AttackHelicopter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AttackHelicopter/AttackHelicopter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AttackHelicopterTests/AttackHelicopterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		96C2DF19190DC3DB00807B8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AttackHelicopter.app/AttackHelicopter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AttackHelicopter/AttackHelicopter-Prefix.pch";
+				INFOPLIST_FILE = "AttackHelicopterTests/AttackHelicopterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96C2DED3190DC3DB00807B8B /* Build configuration list for PBXProject "AttackHelicopter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C2DF12190DC3DB00807B8B /* Debug */,
+				96C2DF13190DC3DB00807B8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96C2DF14190DC3DB00807B8B /* Build configuration list for PBXNativeTarget "AttackHelicopter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C2DF15190DC3DB00807B8B /* Debug */,
+				96C2DF16190DC3DB00807B8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		96C2DF17190DC3DB00807B8B /* Build configuration list for PBXNativeTarget "AttackHelicopterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C2DF18190DC3DB00807B8B /* Debug */,
+				96C2DF19190DC3DB00807B8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96C2DED0190DC3DB00807B8B /* Project object */;
+}
