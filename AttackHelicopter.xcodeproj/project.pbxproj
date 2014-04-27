@@ -29,6 +29,11 @@
 		96C2DF2E190DC99200807B8B /* Bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF2D190DC99200807B8B /* Bullet.m */; };
 		96C2DF31190DC9B500807B8B /* AmmoDisplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF30190DC9B500807B8B /* AmmoDisplayer.m */; };
 		96C2DF34190DC9C000807B8B /* BadMissile.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF33190DC9C000807B8B /* BadMissile.m */; };
+		96C2DF3B190DCA6000807B8B /* ButtonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF3A190DCA6000807B8B /* ButtonNode.m */; };
+		96C2DF3F190DCA8400807B8B /* ENAntiAirCannon.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF3E190DCA8400807B8B /* ENAntiAirCannon.m */; };
+		96C2DF42190DCA8D00807B8B /* ENFlakGun.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF41190DCA8D00807B8B /* ENFlakGun.m */; };
+		96C2DF45190DCA9700807B8B /* ENMissileStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF44190DCA9700807B8B /* ENMissileStation.m */; };
+		96C2DF48190DCA9E00807B8B /* ENSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C2DF47190DCA9E00807B8B /* ENSprite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +80,17 @@
 		96C2DF30190DC9B500807B8B /* AmmoDisplayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmmoDisplayer.m; sourceTree = "<group>"; };
 		96C2DF32190DC9C000807B8B /* BadMissile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadMissile.h; sourceTree = "<group>"; };
 		96C2DF33190DC9C000807B8B /* BadMissile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadMissile.m; sourceTree = "<group>"; };
+		96C2DF39190DCA6000807B8B /* ButtonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonNode.h; sourceTree = "<group>"; };
+		96C2DF3A190DCA6000807B8B /* ButtonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonNode.m; sourceTree = "<group>"; };
+		96C2DF3C190DCA7400807B8B /* CategoryBitMaskOpition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryBitMaskOpition.h; sourceTree = "<group>"; };
+		96C2DF3D190DCA8400807B8B /* ENAntiAirCannon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENAntiAirCannon.h; sourceTree = "<group>"; };
+		96C2DF3E190DCA8400807B8B /* ENAntiAirCannon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENAntiAirCannon.m; sourceTree = "<group>"; };
+		96C2DF40190DCA8D00807B8B /* ENFlakGun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENFlakGun.h; sourceTree = "<group>"; };
+		96C2DF41190DCA8D00807B8B /* ENFlakGun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENFlakGun.m; sourceTree = "<group>"; };
+		96C2DF43190DCA9700807B8B /* ENMissileStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENMissileStation.h; sourceTree = "<group>"; };
+		96C2DF44190DCA9700807B8B /* ENMissileStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENMissileStation.m; sourceTree = "<group>"; };
+		96C2DF46190DCA9E00807B8B /* ENSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENSprite.h; sourceTree = "<group>"; };
+		96C2DF47190DCA9E00807B8B /* ENSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENSprite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +253,8 @@
 		96C2DF20190DC65300807B8B /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF39190DCA6000807B8B /* ButtonNode.h */,
+				96C2DF3A190DCA6000807B8B /* ButtonNode.m */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -266,6 +284,14 @@
 		96C2DF24190DC68100807B8B /* Enemy */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF46190DCA9E00807B8B /* ENSprite.h */,
+				96C2DF47190DCA9E00807B8B /* ENSprite.m */,
+				96C2DF43190DCA9700807B8B /* ENMissileStation.h */,
+				96C2DF44190DCA9700807B8B /* ENMissileStation.m */,
+				96C2DF3D190DCA8400807B8B /* ENAntiAirCannon.h */,
+				96C2DF3E190DCA8400807B8B /* ENAntiAirCannon.m */,
+				96C2DF40190DCA8D00807B8B /* ENFlakGun.h */,
+				96C2DF41190DCA8D00807B8B /* ENFlakGun.m */,
 			);
 			name = Enemy;
 			sourceTree = "<group>";
@@ -273,6 +299,7 @@
 		96C2DF25190DC69000807B8B /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				96C2DF3C190DCA7400807B8B /* CategoryBitMaskOpition.h */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -376,12 +403,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				96C2DF2E190DC99200807B8B /* Bullet.m in Sources */,
+				96C2DF42190DCA8D00807B8B /* ENFlakGun.m in Sources */,
+				96C2DF3B190DCA6000807B8B /* ButtonNode.m in Sources */,
 				96C2DF31190DC9B500807B8B /* AmmoDisplayer.m in Sources */,
 				96C2DEFA190DC3DB00807B8B /* MyScene.m in Sources */,
 				96C2DEF7190DC3DB00807B8B /* ViewController.m in Sources */,
+				96C2DF45190DCA9700807B8B /* ENMissileStation.m in Sources */,
 				96C2DF28190DC93300807B8B /* Cannon.m in Sources */,
 				96C2DF34190DC9C000807B8B /* BadMissile.m in Sources */,
+				96C2DF3F190DCA8400807B8B /* ENAntiAirCannon.m in Sources */,
 				96C2DF2B190DC95C00807B8B /* Weapon.m in Sources */,
+				96C2DF48190DCA9E00807B8B /* ENSprite.m in Sources */,
 				96C2DEEE190DC3DB00807B8B /* AppDelegate.m in Sources */,
 				96C2DEEA190DC3DB00807B8B /* main.m in Sources */,
 			);
@@ -600,6 +632,7 @@
 				96C2DF16190DC3DB00807B8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96C2DF17190DC3DB00807B8B /* Build configuration list for PBXNativeTarget "AttackHelicopterTests" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +641,7 @@
 				96C2DF19190DC3DB00807B8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
