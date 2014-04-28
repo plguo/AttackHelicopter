@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9683C8C9190EFBEF0094C00D /* TileTexture.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9683C8C8190EFBEF0094C00D /* TileTexture.atlas */; };
 		9683DF91190DCF8C00C699F8 /* TestRange.enemy in Resources */ = {isa = PBXBuildFile; fileRef = 9683DF8F190DCF8C00C699F8 /* TestRange.enemy */; };
 		9683DF92190DCF8C00C699F8 /* TestRange.map in Resources */ = {isa = PBXBuildFile; fileRef = 9683DF90190DCF8C00C699F8 /* TestRange.map */; };
+		9683DF94190DD02F00C699F8 /* RocketFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9683DF93190DD02F00C699F8 /* RocketFire.sks */; };
+		9683DF96190DD04B00C699F8 /* BlackSmokeA.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9683DF95190DD04B00C699F8 /* BlackSmokeA.sks */; };
 		96C2DEDC190DC3DB00807B8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DEDB190DC3DB00807B8B /* Foundation.framework */; };
 		96C2DEDE190DC3DB00807B8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DEDD190DC3DB00807B8B /* CoreGraphics.framework */; };
 		96C2DEE0190DC3DB00807B8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DEDF190DC3DB00807B8B /* UIKit.framework */; };
@@ -72,8 +75,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9683C8C8190EFBEF0094C00D /* TileTexture.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = TileTexture.atlas; sourceTree = "<group>"; };
 		9683DF8F190DCF8C00C699F8 /* TestRange.enemy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestRange.enemy; sourceTree = "<group>"; };
 		9683DF90190DCF8C00C699F8 /* TestRange.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestRange.map; sourceTree = "<group>"; };
+		9683DF93190DD02F00C699F8 /* RocketFire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RocketFire.sks; sourceTree = "<group>"; };
+		9683DF95190DD04B00C699F8 /* BlackSmokeA.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BlackSmokeA.sks; sourceTree = "<group>"; };
 		96C2DED8190DC3DB00807B8B /* AttackHelicopter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttackHelicopter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C2DEDB190DC3DB00807B8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96C2DEDD190DC3DB00807B8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -322,6 +328,7 @@
 				96C2DF7E190DCC0A00807B8B /* TileMap.m */,
 				9683DF8F190DCF8C00C699F8 /* TestRange.enemy */,
 				9683DF90190DCF8C00C699F8 /* TestRange.map */,
+				9683C8C8190EFBEF0094C00D /* TileTexture.atlas */,
 				96C2DF82190DCCF700807B8B /* TileImage.xcassets */,
 			);
 			name = Map;
@@ -401,8 +408,10 @@
 			children = (
 				96C2DF66190DCB7900807B8B /* Propeller.atlas */,
 				96C2DF3C190DCA7400807B8B /* CategoryBitMaskOpition.h */,
+				9683DF95190DD04B00C699F8 /* BlackSmokeA.sks */,
 				96C2DF49190DCAEF00807B8B /* Explosion.sks */,
 				96C2DF71190DCBB400807B8B /* spark.png */,
+				9683DF93190DD02F00C699F8 /* RocketFire.sks */,
 				96C2DF72190DCBB400807B8B /* SparkA.sks */,
 				96C2DF80190DCC6900807B8B /* GameResource.xcassets */,
 			);
@@ -490,11 +499,14 @@
 				9683DF92190DCF8C00C699F8 /* TestRange.map in Resources */,
 				96C2DF67190DCB7900807B8B /* Propeller.atlas in Resources */,
 				96C2DF76190DCBCF00807B8B /* targetScope.png in Resources */,
+				9683DF94190DD02F00C699F8 /* RocketFire.sks in Resources */,
 				96C2DF81190DCC6900807B8B /* GameResource.xcassets in Resources */,
 				96C2DEF4190DC3DB00807B8B /* Main_iPad.storyboard in Resources */,
 				96C2DF74190DCBB400807B8B /* SparkA.sks in Resources */,
 				96C2DF83190DCCF700807B8B /* TileImage.xcassets in Resources */,
 				96C2DF73190DCBB400807B8B /* spark.png in Resources */,
+				9683C8C9190EFBEF0094C00D /* TileTexture.atlas in Resources */,
+				9683DF96190DD04B00C699F8 /* BlackSmokeA.sks in Resources */,
 				9683DF91190DCF8C00C699F8 /* TestRange.enemy in Resources */,
 				96C2DF4A190DCAEF00807B8B /* Explosion.sks in Resources */,
 				96C2DEF1190DC3DB00807B8B /* Main_iPhone.storyboard in Resources */,
