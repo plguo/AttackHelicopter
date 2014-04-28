@@ -19,14 +19,14 @@
         screenSize = size;
         self.mapFile = name;
         
-        self.rectTextureS = [SKTexture textureWithImageNamed:@"rectBlockStk"];
-        self.rectTextureB = [SKTexture textureWithImageNamed:@"rectBlockBtk"];
+        self.rectTextureS = [SKTexture textureWithImageNamed:@"rectBlockS"];
+        self.rectTextureB = [SKTexture textureWithImageNamed:@"rectBlockB"];
         
-        self.rectTextureL = [SKTexture textureWithImageNamed:@"rectBlockBtk"];
-        self.rectTextureR = [SKTexture textureWithImageNamed:@"rectBlockBtk"];
+        self.rectTextureL = [SKTexture textureWithImageNamed:@"rectBlockL"];
+        self.rectTextureR = [SKTexture textureWithImageNamed:@"rectBlockR"];
         
-        self.triTextureL = [SKTexture textureWithImageNamed:@"triBlockLtk"];
-        self.triTextureR = [SKTexture textureWithImageNamed:@"triBlockRtk"];
+        self.triTextureL = [SKTexture textureWithImageNamed:@"triBlockL"];
+        self.triTextureR = [SKTexture textureWithImageNamed:@"triBlockR"];
         
         self.loadStartX = 0.0;
         self.loadEndX = 0.0;
