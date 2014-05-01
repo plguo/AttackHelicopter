@@ -58,20 +58,23 @@
     [self rotateToAngle:self.normalAngle];
 }
 
--(void)targetAtScenePosition:(CGPoint)relativePos{
-    CGFloat newAngle=0.0;
-    if (relativePos.x == 0.0) {
-        newAngle= 0.0;
-    }else{
-        newAngle = atan(relativePos.y/relativePos.x);
-        if (relativePos.x<0.0) {
-            newAngle += M_PI;
+-(void)updateTargetPosition{
+    if (self.targetNode) {
+        CGPoint relativePos = [self.scene convertPoint:[self.scene convertPoint:CGPointZero fromNode:self.targetNode] toNode:self];
+        CGFloat newAngle=0.0;
+        if (relativePos.x == 0.0) {
+            newAngle= 0.0;
         }else{
-            newAngle += M_PI*2;
+            newAngle = atan(relativePos.y/relativePos.x);
+            if (relativePos.x<0.0) {
+                newAngle += M_PI;
+            }else{
+                newAngle += M_PI*2;
+            }
         }
+        self.expectRotation = newAngle;
+        [self updateRotation];
     }
-    self.expectRotation = newAngle;
-    [self updateRotation];
 }
 
 -(void)reloadSingleBullet{

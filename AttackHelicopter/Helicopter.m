@@ -55,9 +55,14 @@
     }
     return self;
 }
--(void)targetPositionInScene:(CGPoint)point{
+-(void)targetNode:(SKNode *)node{
     self.cannonTargeting = YES;
-    [self.cannon targetAtScenePosition:[self.scene convertPoint:point toNode:self.cannon]];
+    self.cannon.targetNode = node;
+    [self.cannon updateTargetPosition];
+}
+
+-(void)targetNodePositionDidChanged{
+    [self.cannon updateTargetPosition];
 }
 
 -(NSTimeInterval)cannonWaitInterval{
@@ -84,6 +89,13 @@
     [super setZRotation:zRotation];
     if (self.cannonTargeting) {
         [self.cannon updateRotation];
+    }
+}
+
+-(void)setPosition:(CGPoint)position{
+    [super setPosition:position];
+    if (self.cannonTargeting) {
+        [self.cannon updateTargetPosition];
     }
 }
 

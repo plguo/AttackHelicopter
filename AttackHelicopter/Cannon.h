@@ -16,7 +16,7 @@
 
 @interface Cannon : SKSpriteNode
 -(id)initCannon;
--(void)targetAtScenePosition:(CGPoint)relativePos;
+-(void)updateTargetPosition;
 -(void)rotateToNormalAngle;
 -(BOOL)cannonWillShoot;
 -(void)startReload;
@@ -39,4 +39,6 @@
 
 @property(nonatomic, weak) SKSpriteNode* barrel;
 @property(nonatomic, weak) id<CannonDelegate> delegate;
+
+@property(nonatomic, weak) SKNode* targetNode;
 @end

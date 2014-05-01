@@ -11,7 +11,8 @@
 
 @class TargetScope;
 @protocol TargetScopeDelegate <NSObject>
--(void)targetPositionInScene:(CGPoint)point;
+-(void)targetNode:(SKNode*)node;
+-(void)targetNodePositionDidChanged;
 -(void)targetScopeEnd;
 @end
 

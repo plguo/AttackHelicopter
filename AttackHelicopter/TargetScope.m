@@ -7,8 +7,9 @@
 //
 
 #import "TargetScope.h"
-
 @implementation TargetScope
+@synthesize delegate = _delegate;
+
 -(id)initTargetScopeWithEnsprite:(ENSprite *)sprite{
     if (self = [super initWithImageNamed:@"targetScope"]) {
         self.trackingSprite = sprite;
@@ -25,6 +26,13 @@
     [self removeTargetScope];
 }
 
+-(void)updateTargetNode{
+    if (self.delegate) {
+        [self.delegate targetNode:(SKNode *)self.trackingSprite];
+        [self updatePosition];
+    }
+}
+
 -(void)updatePosition{
     CGPoint PositionInScene = [self.scene convertPoint:CGPointZero fromNode:self.trackingSprite];
     self.position = [self.parent convertPoint:PositionInScene
@@ -33,7 +41,14 @@
         [self removeTargetScope];
     }
     if (self.delegate) {
-        [self.delegate targetPositionInScene:PositionInScene];
+        [self.delegate targetNodePositionDidChanged];
+    }
+}
+
+-(void)setDelegate:(id<TargetScopeDelegate>)delegate{
+    _delegate = delegate;
+    if (self.trackingSprite) {
+        [self updateTargetNode];
     }
 }
 
@@ -55,7 +70,7 @@
     sprite.delegate = self;
     
     [self runAction:[SKAction moveTo:[self.parent convertPoint:[self.scene convertPoint:CGPointZero fromNode:self.trackingSprite] fromNode:self.scene] duration:0.5] completion:^{
-        [self updatePosition];
+        [self updateTargetNode];
     }];
      
 }
