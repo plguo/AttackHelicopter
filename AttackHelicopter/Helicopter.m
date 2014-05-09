@@ -46,7 +46,7 @@
         }
         
         
-        self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(40, 30)];
+        self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.size];
         self.physicsBody.dynamic = YES;
         self.physicsBody.affectedByGravity = NO;
         self.physicsBody.categoryBitMask = CategoryHelicopter;

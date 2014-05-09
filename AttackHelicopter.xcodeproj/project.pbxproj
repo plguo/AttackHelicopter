@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96391D611914389F007A24E6 /* ENPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = 96391D601914389F007A24E6 /* ENPlane.m */; };
 		9683C8C9190EFBEF0094C00D /* TileTexture.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9683C8C8190EFBEF0094C00D /* TileTexture.atlas */; };
 		9683DF91190DCF8C00C699F8 /* TestRange.enemy in Resources */ = {isa = PBXBuildFile; fileRef = 9683DF8F190DCF8C00C699F8 /* TestRange.enemy */; };
 		9683DF92190DCF8C00C699F8 /* TestRange.map in Resources */ = {isa = PBXBuildFile; fileRef = 9683DF90190DCF8C00C699F8 /* TestRange.map */; };
@@ -74,6 +75,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96391D5F1914389F007A24E6 /* ENPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENPlane.h; sourceTree = "<group>"; };
+		96391D601914389F007A24E6 /* ENPlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENPlane.m; sourceTree = "<group>"; };
 		9683C8C8190EFBEF0094C00D /* TileTexture.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = TileTexture.atlas; sourceTree = "<group>"; };
 		9683DF8F190DCF8C00C699F8 /* TestRange.enemy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestRange.enemy; sourceTree = "<group>"; };
 		9683DF90190DCF8C00C699F8 /* TestRange.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestRange.map; sourceTree = "<group>"; };
@@ -396,6 +399,8 @@
 				96C2DF3E190DCA8400807B8B /* ENAntiAirCannon.m */,
 				96C2DF40190DCA8D00807B8B /* ENFlakGun.h */,
 				96C2DF41190DCA8D00807B8B /* ENFlakGun.m */,
+				96391D5F1914389F007A24E6 /* ENPlane.h */,
+				96391D601914389F007A24E6 /* ENPlane.m */,
 			);
 			name = Enemy;
 			sourceTree = "<group>";
@@ -526,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96C2DF5C190DCB2B00807B8B /* MapsController.m in Sources */,
+				96391D611914389F007A24E6 /* ENPlane.m in Sources */,
 				96C2DF59190DCB2200807B8B /* Joystick.m in Sources */,
 				96C2DF56190DCB1400807B8B /* Helicopter.m in Sources */,
 				96C2DF5F190DCB3400807B8B /* MenuScene.m in Sources */,
