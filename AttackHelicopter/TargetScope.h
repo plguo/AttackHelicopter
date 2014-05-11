@@ -19,6 +19,7 @@
 @interface TargetScope : SKSpriteNode<ENSpriteDelegate>
 -(id)initTargetScopeWithEnsprite:(ENSprite*)sprite;
 -(void)updatePosition;
+-(void)updateTargetNode;
 -(void)targetNewSprite:(ENSprite*)sprite;
 
 @property(nonatomic, weak) id<TargetScopeDelegate> delegate;

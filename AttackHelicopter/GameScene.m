@@ -61,7 +61,7 @@
         [self.interfaceLayer addChild:pButton];
         
         HealthDisplayer* hdisplayer = [[HealthDisplayer alloc]initDisplayer];
-        hdisplayer.position = CGPointMake(100, self.size.height - 12.0);
+        hdisplayer.position = CGPointMake(100, self.size.height - 20.0);
         [self.interfaceLayer addChild:hdisplayer];
         self.mainHelicopter.healthDelegate = hdisplayer;
         
@@ -137,11 +137,10 @@
                 
                 if (!self.scope) {
                     TargetScope* scope = [[TargetScope alloc]initTargetScopeWithEnsprite:(ENSprite*)node];
-                    scope.delegate = self.mainHelicopter;
                     scope.alpha = 0.0;
-                    [self addChild:scope];
+                    [self.interfaceLayer addChild:scope];
+                    scope.delegate = self.mainHelicopter;
                     self.scope = scope;
-                    [self.scope updatePosition];
                     scope.alpha = 1.0;
                 }
                 break;

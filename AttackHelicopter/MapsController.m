@@ -105,8 +105,6 @@
         return [[ENFlakGun alloc] initEnemySprite];
     }else if ([name isEqualToString:@"C"]){
         return [[ENMissileStation alloc] initEnemySprite];
-    }else if ([name isEqualToString:@"D"]){
-        
     }
     return nil;
 }

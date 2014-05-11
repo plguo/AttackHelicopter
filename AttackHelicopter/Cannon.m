@@ -72,7 +72,11 @@
                 newAngle += M_PI*2;
             }
         }
+        
         self.expectRotation = newAngle;
+        
+        NSLog(@"POS:%f,%f ANGLE:%f",relativePos.x,relativePos.y,self.expectRotation);
+        
         [self updateRotation];
     }
 }

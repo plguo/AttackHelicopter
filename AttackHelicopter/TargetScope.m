@@ -14,8 +14,8 @@
     if (self = [super initWithImageNamed:@"targetScope"]) {
         self.trackingSprite = sprite;
         self.trackingSprite.delegate = self;
+
         self.userInteractionEnabled = YES;
-        self.zPosition = 9.0;
     }
     return self;
 }
@@ -52,7 +52,9 @@
     }
 }
 
+
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    [super touchesEnded:touches withEvent:event];
     [self removeTargetScope];
 }
 

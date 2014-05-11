@@ -58,7 +58,7 @@
 -(void)targetNode:(SKNode *)node{
     self.cannonTargeting = YES;
     self.cannon.targetNode = node;
-    [self.cannon updateTargetPosition];
+    //[self.cannon updateTargetPosition];
 }
 
 -(void)targetNodePositionDidChanged{
@@ -92,12 +92,6 @@
     }
 }
 
--(void)setPosition:(CGPoint)position{
-    [super setPosition:position];
-    if (self.cannonTargeting) {
-        [self.cannon updateTargetPosition];
-    }
-}
 
 -(void)damage:(uint8_t)lostHealth{
     if (lostHealth<self.health) {

@@ -23,6 +23,7 @@
 }
 
 -(void)startAction{
+    /*
     SKAction * shoot = [SKAction performSelector:@selector(shootBullet) onTarget:self];
     SKAction * shortWait = [SKAction waitForDuration:0.3];
     SKAction * longWait = [SKAction waitForDuration:5.0];
@@ -35,6 +36,7 @@
     SKAction* remove = [SKAction removeFromParent];
     SKAction* moveSequence = [SKAction sequence:@[move,up,remove]];
     [self runAction:moveSequence];
+     */
 }
 
 -(void)shootBullet{
