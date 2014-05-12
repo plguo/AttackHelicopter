@@ -42,31 +42,37 @@
         Joystick* joystick1 = [[Joystick alloc]initJoystick];
         joystick1.position = CGPointMake(34, 34);
         joystick1.delegate = self;
+        joystick1.zPosition = 1.0;
         joystick1.joystickScale = 7.0;
         [self.interfaceLayer addChild:joystick1];
         
         RocketButton* rButton = [[RocketButton alloc] initButton];
         rButton.position = CGPointMake(self.size.width - 40.0, 40.0);
         rButton.delegate = self.mainHelicopter;
+        rButton.zPosition = 1.0;
         [self.interfaceLayer addChild:rButton];
         
         ShootButton* sButton = [[ShootButton alloc]initShootButton];
         sButton.position = CGPointMake(self.size.width - 100.0, 40.0);
         sButton.delegate = self.mainHelicopter;
+        sButton.zPosition = 1.0;
         [self.interfaceLayer addChild:sButton];
         
         PauseButton* pButton = [[PauseButton alloc]initPauseButton];
         pButton.position = CGPointMake(30, self.size.height - 30);
         pButton.delegate = self;
+        pButton.zPosition = 1.0;
         [self.interfaceLayer addChild:pButton];
         
         HealthDisplayer* hdisplayer = [[HealthDisplayer alloc]initDisplayer];
         hdisplayer.position = CGPointMake(100, self.size.height - 20.0);
+        hdisplayer.zPosition = 1.0;
         [self.interfaceLayer addChild:hdisplayer];
         self.mainHelicopter.healthDelegate = hdisplayer;
         
         AmmoDisplayer* adisplayer = [[AmmoDisplayer alloc]initDisplayerWithCannon:self.mainHelicopter.cannon];
         adisplayer.position = CGPointMake(200, self.size.height - 12.0);
+        adisplayer.zPosition = 1.0;
         [self.interfaceLayer addChild:adisplayer];
         
         SKLabelNode* markLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-Medium"];
@@ -74,6 +80,7 @@
         markLabel.verticalAlignmentMode = SKLabelVerticalAlignmentModeCenter;
         markLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeRight;
         markLabel.position = CGPointMake(self.size.width - 12.0, self.size.height - 24.0);
+        markLabel.zPosition = 1.0;
         [self.interfaceLayer addChild:markLabel];
         self.markLabel = markLabel;
         
@@ -118,7 +125,15 @@
 
 -(void)joystickEnd{
     self.mainHelicopter.velocity = CGVectorMake(0, 0);
-    [self.mainHelicopter runAction:[SKAction rotateToAngle:0 duration:0.5 shortestUnitArc:YES]];
+    [self.mainHelicopter runAction:[SKAction rotateToAngle:0 duration:0.5 shortestUnitArc:YES] completion:^{
+        if (self.scope) {
+            if (!self.scope.parent) {
+                self.scope = nil;
+            }else{
+                [self.scope updatePosition];
+            }
+        }
+    }];
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{

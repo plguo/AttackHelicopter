@@ -60,7 +60,8 @@
 
 -(void)updateTargetPosition{
     if (self.targetNode) {
-        CGPoint relativePos = [self.scene convertPoint:[self.scene convertPoint:CGPointZero fromNode:self.targetNode] toNode:self];
+        
+        CGPoint relativePos = [self.parent convertPoint:CGPointMake(self.targetNode.position.x - self.parent.position.x, self.targetNode.position.y - self.parent.position.y) toNode:self];
         CGFloat newAngle=0.0;
         if (relativePos.x == 0.0) {
             newAngle= 0.0;
@@ -75,8 +76,7 @@
         
         self.expectRotation = newAngle;
         
-        NSLog(@"POS:%f,%f ANGLE:%f",relativePos.x,relativePos.y,self.expectRotation);
-        
+
         [self updateRotation];
     }
 }
