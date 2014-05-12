@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96264C301921808400E0B231 /* SkyMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 96264C2F1921808400E0B231 /* SkyMap.m */; };
 		96391D611914389F007A24E6 /* ENPlane.m in Sources */ = {isa = PBXBuildFile; fileRef = 96391D601914389F007A24E6 /* ENPlane.m */; };
 		9683C8C9190EFBEF0094C00D /* TileTexture.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 9683C8C8190EFBEF0094C00D /* TileTexture.atlas */; };
 		9683DF91190DCF8C00C699F8 /* TestRange.enemy in Resources */ = {isa = PBXBuildFile; fileRef = 9683DF8F190DCF8C00C699F8 /* TestRange.enemy */; };
@@ -75,6 +76,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96264C2E1921808400E0B231 /* SkyMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyMap.h; sourceTree = "<group>"; };
+		96264C2F1921808400E0B231 /* SkyMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyMap.m; sourceTree = "<group>"; };
 		96391D5F1914389F007A24E6 /* ENPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENPlane.h; sourceTree = "<group>"; };
 		96391D601914389F007A24E6 /* ENPlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENPlane.m; sourceTree = "<group>"; };
 		9683C8C8190EFBEF0094C00D /* TileTexture.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = TileTexture.atlas; sourceTree = "<group>"; };
@@ -302,6 +305,8 @@
 				96C2DF5B190DCB2B00807B8B /* MapsController.m */,
 				96C2DF57190DCB2200807B8B /* Joystick.h */,
 				96C2DF58190DCB2200807B8B /* Joystick.m */,
+				96264C2E1921808400E0B231 /* SkyMap.h */,
+				96264C2F1921808400E0B231 /* SkyMap.m */,
 				96C2DF20190DC65300807B8B /* Button */,
 				96C2DF1F190DC64500807B8B /* Displayer */,
 				96C2DF84190DCD5C00807B8B /* UIResource.xcassets */,
@@ -559,6 +564,7 @@
 				96C2DEEE190DC3DB00807B8B /* AppDelegate.m in Sources */,
 				96C2DF50190DCB0000807B8B /* GameScene.m in Sources */,
 				96C2DEEA190DC3DB00807B8B /* main.m in Sources */,
+				96264C301921808400E0B231 /* SkyMap.m in Sources */,
 				96C2DF6D190DCB9B00807B8B /* RocketButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
