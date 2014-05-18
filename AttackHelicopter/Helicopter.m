@@ -22,28 +22,17 @@
         self.cannon = mainCannon;
         
         SKTextureAtlas* tAtlas = [SKTextureAtlas atlasNamed:@"Propeller"];
-        NSArray *textureNames = [tAtlas textureNames];
-        int count = (int)[textureNames count]/2;
-        if ([textureNames count] > 0) {
-            NSMutableArray *textures = [NSMutableArray arrayWithCapacity:[textureNames count]-1];
-            int i;
-            for (i = 0; i < count; i++) {
-                SKTexture* texture = [tAtlas textureNamed:[NSString stringWithFormat:@"Propeller%d",i+1]];
-                [textures setObject:texture atIndexedSubscript:i];
-            }
-            
-            for (int j = count - 1; j > 0; j--) {
-                SKTexture* texture = [tAtlas textureNamed:[NSString stringWithFormat:@"Propeller%d",j+1]];
-                [textures setObject:texture atIndexedSubscript:i];
-                i ++;
-            }
-            
-            SKSpriteNode* propeller = [SKSpriteNode spriteNodeWithTexture:[tAtlas textureNamed:@"Propeller1"]];
-            propeller.position = CGPointMake(4, 14);
-            [self addChild:propeller];
-            SKAction* spin = [SKAction animateWithTextures:textures timePerFrame:0.03];
-            [propeller runAction:[SKAction repeatActionForever:spin]];
-        }
+
+        NSArray *textures = @[[tAtlas textureNamed:@"Propeller1"],
+                              [tAtlas textureNamed:@"Propeller2"],
+                              [tAtlas textureNamed:@"Propeller3"]];
+        
+        
+        SKSpriteNode* propeller = [SKSpriteNode spriteNodeWithTexture:[tAtlas textureNamed:@"Propeller1"]];
+        propeller.position = CGPointMake(4, 14);
+        [self addChild:propeller];
+        SKAction* spin = [SKAction animateWithTextures:textures  timePerFrame:1];
+        [propeller runAction:[SKAction repeatActionForever:spin]];
         
         
         self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.size];
