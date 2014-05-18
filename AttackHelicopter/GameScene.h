@@ -20,6 +20,7 @@
 #import "CategoryBitMaskOpition.h"
 #import "PauseButton.h"
 #import "AmmoDisplayer.h"
+#import "SkyMap.h"
 
 @interface GameScene : SKScene<SKPhysicsContactDelegate,JoystickDelegate,HelicopterSceneDelegate,PauseButtonDelegate>
 -(id)initWithSize:(CGSize)size;

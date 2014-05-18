@@ -19,18 +19,9 @@
     if (self = [super initWithSize:size]) {
         self.backgroundColor = [SKColor colorWithRed:0 green:0.69 blue:1.0 alpha:0.0];
         
-        SKSpriteNode* cloud1 = [SKSpriteNode spriteNodeWithImageNamed:@"clouds_tk"];
-        cloud1.position = CGPointMake(200, 200);
-        [self addChild:cloud1];
-        
-        SKSpriteNode* cloud2 = [SKSpriteNode spriteNodeWithImageNamed:@"clouds_tk"];
-        cloud2.position = CGPointMake(300, 250);
-        [self addChild:cloud2];
-        
-        SKSpriteNode* cloud3 = [SKSpriteNode spriteNodeWithImageNamed:@"clouds_tk"];
-        cloud3.position = CGPointMake(440, 225);
-        [self addChild:cloud3];
-        
+        SkyMap* skyMap = [SkyMap node];
+        [self addChild:skyMap];
+        [skyMap startAction];
         
         SKNode* world = [SKNode node];
         world.zPosition = 1.0;

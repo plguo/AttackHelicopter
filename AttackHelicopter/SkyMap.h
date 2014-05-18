@@ -9,5 +9,5 @@
 #import <SpriteKit/SpriteKit.h>
 
 @interface SkyMap : SKNode
-
+-(void)startAction;
 @end
