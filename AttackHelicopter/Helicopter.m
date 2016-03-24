@@ -25,13 +25,14 @@
 
         NSArray *textures = @[[tAtlas textureNamed:@"Propeller1"],
                               [tAtlas textureNamed:@"Propeller2"],
-                              [tAtlas textureNamed:@"Propeller3"]];
+                              [tAtlas textureNamed:@"Propeller3"],
+                              [tAtlas textureNamed:@"Propeller4"]];
         
         
         SKSpriteNode* propeller = [SKSpriteNode spriteNodeWithTexture:[tAtlas textureNamed:@"Propeller1"]];
         propeller.position = CGPointMake(4, 14);
         [self addChild:propeller];
-        SKAction* spin = [SKAction animateWithTextures:textures  timePerFrame:1];
+        SKAction* spin = [SKAction animateWithTextures:textures  timePerFrame:0.04];
         [propeller runAction:[SKAction repeatActionForever:spin]];
         
         

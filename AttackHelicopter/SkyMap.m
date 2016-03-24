@@ -24,10 +24,9 @@
 }
 
 -(void)addCloud{
-    NSLog(@"H");
     if (self.scene && [self.children count]<MAX_CHILD) {
         CGFloat lowerBound = MIN_HEIGHT;
-        uint32_t range     = (uint32_t)self.scene.size.height- MIN_SPACE;
+        uint32_t range     = (uint32_t)self.scene.size.height- MIN_SPACE - lowerBound;
         
         CGFloat randomY       = (arc4random() % range)+lowerBound ;
         CGPoint cloudPosition = CGPointMake(self.scene.size.width+START_X, randomY);

@@ -14,6 +14,7 @@
 		9683DF92190DCF8C00C699F8 /* TestRange.map in Resources */ = {isa = PBXBuildFile; fileRef = 9683DF90190DCF8C00C699F8 /* TestRange.map */; };
 		9683DF94190DD02F00C699F8 /* RocketFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9683DF93190DD02F00C699F8 /* RocketFire.sks */; };
 		9683DF96190DD04B00C699F8 /* BlackSmokeA.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9683DF95190DD04B00C699F8 /* BlackSmokeA.sks */; };
+		96BD6787192A6AD500B38073 /* RocketLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BD6786192A6AD500B38073 /* RocketLauncher.m */; };
 		96C2DEDC190DC3DB00807B8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DEDB190DC3DB00807B8B /* Foundation.framework */; };
 		96C2DEDE190DC3DB00807B8B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DEDD190DC3DB00807B8B /* CoreGraphics.framework */; };
 		96C2DEE0190DC3DB00807B8B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2DEDF190DC3DB00807B8B /* UIKit.framework */; };
@@ -85,6 +86,8 @@
 		9683DF90190DCF8C00C699F8 /* TestRange.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestRange.map; sourceTree = "<group>"; };
 		9683DF93190DD02F00C699F8 /* RocketFire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RocketFire.sks; sourceTree = "<group>"; };
 		9683DF95190DD04B00C699F8 /* BlackSmokeA.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BlackSmokeA.sks; sourceTree = "<group>"; };
+		96BD6785192A6AD500B38073 /* RocketLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RocketLauncher.h; sourceTree = "<group>"; };
+		96BD6786192A6AD500B38073 /* RocketLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RocketLauncher.m; sourceTree = "<group>"; };
 		96C2DED8190DC3DB00807B8B /* AttackHelicopter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttackHelicopter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C2DEDB190DC3DB00807B8B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96C2DEDD190DC3DB00807B8B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -372,6 +375,8 @@
 				96C2DF55190DCB1400807B8B /* Helicopter.m */,
 				96C2DF26190DC93300807B8B /* Cannon.h */,
 				96C2DF27190DC93300807B8B /* Cannon.m */,
+				96BD6785192A6AD500B38073 /* RocketLauncher.h */,
+				96BD6786192A6AD500B38073 /* RocketLauncher.m */,
 			);
 			name = Helicopter;
 			sourceTree = "<group>";
@@ -469,9 +474,12 @@
 		96C2DED0190DC3DB00807B8B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Edward Peiliang Guo";
 				TargetAttributes = {
+					96C2DED7190DC3DB00807B8B = {
+						DevelopmentTeam = VN5PBBVFWW;
+					};
 					96C2DF02190DC3DB00807B8B = {
 						TestTargetID = 96C2DED7190DC3DB00807B8B;
 					};
@@ -540,6 +548,7 @@
 				96C2DF59190DCB2200807B8B /* Joystick.m in Sources */,
 				96C2DF56190DCB1400807B8B /* Helicopter.m in Sources */,
 				96C2DF5F190DCB3400807B8B /* MenuScene.m in Sources */,
+				96BD6787192A6AD500B38073 /* RocketLauncher.m in Sources */,
 				96C2DF2E190DC99200807B8B /* Bullet.m in Sources */,
 				96C2DF42190DCA8D00807B8B /* ENFlakGun.m in Sources */,
 				96C2DF65190DCB4600807B8B /* PauseButton.m in Sources */,
@@ -641,6 +650,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -700,9 +710,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AttackHelicopter/AttackHelicopter-Prefix.pch";
 				INFOPLIST_FILE = "AttackHelicopter/AttackHelicopter-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.candong-guo.AttackHelicopter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -714,9 +726,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AttackHelicopter/AttackHelicopter-Prefix.pch";
 				INFOPLIST_FILE = "AttackHelicopter/AttackHelicopter-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.candong-guo.AttackHelicopter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -739,6 +753,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "AttackHelicopterTests/AttackHelicopterTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.edward-peiliang-guo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -757,6 +772,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AttackHelicopter/AttackHelicopter-Prefix.pch";
 				INFOPLIST_FILE = "AttackHelicopterTests/AttackHelicopterTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.edward-peiliang-guo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
